@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
+    <title>Revitalizace veřejného koupaliště v Brandýse nad Orlicí</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .roboto{
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings:
+            "wdth" 200;
+        }
+
+       @font-face {
+        font-family: 'TrenchSlabBold';
+        src: url('TrenchSlab-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        }
+
+        body {
+            font-family: "Roboto";
+            line-height: 1.7;
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #F26A2F;
+            height: 100vh;
+            background-color: #ffffff;
+        }
+
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255);
+            border-radius: 20px;
+            padding: 60px 50px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .nadpis {
+            padding-bottom: 50px;
+            display: block;
+            margin: auto;
+            width: 100%;
+        }
+
+        h1 {
+            color: white;
+            -webkit-text-stroke: 1px #F26A2F; /* Blue stroke */
+            text-stroke: 1px #F26A2F; /* For Firefox (future support) */
+            font-size: 6rem;
+            text-align: center;
+            line-height: 5.8rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+             color: white;
+            -webkit-text-stroke: 1px #0f42c1; /* Blue stroke */
+            text-stroke: 1px #0f42c1; /* For Firefox (future support) */
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 300;
+        }
+
+        .content {
+            font-family: "Roboto";
+            color: #F26A2F;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+    
+        }
+
+        .goal-text  {
+            font-family: "Roboto";
+        }
+
+        .photo-section {
+            background: linear-gradient(45deg, #3E74FF, #FFC3E9);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 40px 0;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .goal-text {
+            color: #F26A2F;
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+        }
+
+        .links-section {
+            background: rgba(62, 116, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+        }
+
+        .links-title {
+            color: #3E74FF;
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        .link-item {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .link-label {
+            font-weight: bold;
+            color: #F26A2F;
+            min-width: 80px;
+        }
+
+        .link {
+            color: #3E74FF;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 12px 25px;
+            background: #ffffff;
+            border-radius: 25px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .link:hover {
+            background: #3E74FF;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .decorative-element {
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #3E74FF, #FFC3E9);
+            margin: 30px auto;
+            border-radius: 2px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            
+            .container {
+                padding: 30px 20px;
+                border-radius: 15px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+                line-height: 1.2;
+                margin-bottom: 10px;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+                margin-bottom: 30px;
+            }
+            
+            .content, .goal-text {
+                font-size: 1rem;
+                text-align: left;
+            }
+            
+            .photo-section {
+                padding: 20px;
+                font-size: 1.1rem;
+                margin: 30px 0;
+            }
+            
+            .links-section {
+                padding: 25px 20px;
+            }
+            
+            .links-title {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+            }
+            
+            .link-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+                margin-bottom: 15px;
+            }
+            
+            .link-label {
+                min-width: auto;
+                font-size: 0.9rem;
+            }
+            
+            .link {
+                font-size: 0.95rem;
+                padding: 10px 20px;
+                word-break: break-word;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+                 .image-container {
+            display: flex;
+            justify-content: center; /* center images horizontally */
+            gap: 20px; /* space between images */
+            padding-bottom: 20px;
+            }
+            .image-container img {
+            max-width: 110%;
+            height: auto;
+            width: 60%; /* adjust as needed */
+            }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 15px 5px;
+            }
+            
+            .container {
+                padding: 25px 15px;
+            }
+            
+            h1 {
+                font-size: 1.6rem;
+                letter-spacing: -0.5px;
+            }
+            
+            .subtitle {
+                font-size: 0.9rem;
+            }
+            
+            .content, .goal-text {
+                font-size: 0.95rem;
+        
+            }
+            
+            .photo-section {
+                padding: 15px;
+                font-size: 1rem;
+            }
+            
+            .links-section {
+                padding: 20px 15px;
+            }
+            
+            .links-title {
+                font-size: 1.1rem;
+            }
+            
+            .link {
+                font-size: 0.9rem;
+                padding: 12px 15px;
+            }
+
+   
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img
+        class="nadpis"
+        src="nadpis.svg"
+        alt="triangle with all three sides equal" />
+        
+        <p class="content">
+           Místní dobrovolnické sdružení se dlouhodobě snaží&nbsp;o záchranu a postupné oživení prostoru veřejného koupaliště. Díky jejich úsilí se daří opravovat jednotlivé části areálu a vracet mu funkci přirozeného centra setkávání, odpočinku a aktivního trávení času pro místní obyvatele i<span>&nbsp;</span>návštěvníky. Areál zůstává volně přístupný široké veřejnosti jako otevřený prostor pro každodenní využití.
+        </p>
+        
+        <div class="image-container">
+            <img  src="pred.png" alt="Before">
+            <img src="po.png" alt="After">
+        </div>
+        
+        <p class="goal-text">
+            Cílem celé revitalizace je zachovat výjimečný charakter tohoto místa v přírodě, podpořit komunitní život a vytvořit prostor, který bude sloužit dalším generacím.
+        </p>
+        
+        <div class="links-section">
+            <div class="links-title">Více informací o projektu a možnostech zapojení najdete zde:</div>
+            
+            <div class="link-item">
+                <span class="link-label">Donio:</span>
+                <a href="https://donio.cz/zachranakoupalistebrandyscastdruha" class="link" target="_blank">
+                    Sbírka na záchranu koupaliště v Brandýse nad Orlicí – Druhá část
+                </a>
+            </div>
+            
+            <div class="link-item">
+                <span class="link-label">Facebook:</span>
+                <a href="https://www.facebook.com/groups/1098786468013131" class="link" target="_blank">
+                    Koupaliště Brandýs
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
